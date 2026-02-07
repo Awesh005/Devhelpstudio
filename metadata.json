@@ -1,0 +1,9 @@
+
+{
+  "name": "DevHelp Studio - Final Year Project Support",
+  "description": "Professional support for final year students across Website Development, AI/ML, and Automation projects with full source code and explanations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
