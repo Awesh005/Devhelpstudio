@@ -1,9 +1,11 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
+import StatsCounter from './components/StatsCounter';
 import Features from './components/Features';
+import HowItWorks from './components/HowItWorks';
+import Services from './components/Services';
 import AIAssistant from './components/AIAssistant';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -15,7 +17,9 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <StatsCounter />
         <Features />
+        <HowItWorks />
         <Services />
         <AIAssistant />
         <Testimonials />

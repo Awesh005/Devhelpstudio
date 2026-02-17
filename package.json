@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.2.4",
+    "@emailjs/browser": "^4.4.1",
+    "@google/generative-ai": "^0.24.1",
+    "@lottiefiles/dotlottie-react": "^0.18.1",
+    "lucide-react": "^0.563.0",
     "react": "^19.2.4",
-    "@google/genai": "^1.38.0",
-    "lucide-react": "^0.563.0"
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
