@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ArrowRight, Sparkles, Shield, FileText, Headphones } from 'lucide-react';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Hero: React.FC = () => {
   return (
@@ -74,15 +73,6 @@ const Hero: React.FC = () => {
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Lottie Animation (Desktop/Tablet) */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] hidden lg:block pointer-events-none opacity-40 -z-5">
-         <DotLottieReact
-            src="https://lottie.host/17b3eb6c-733e-473a-b8e7-0331070b4353/7jB7i9kQG0.lottie"
-            loop
-            autoplay
-         />
       </div>
 
     </section>

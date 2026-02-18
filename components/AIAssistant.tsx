@@ -2,10 +2,7 @@
 import React, { useState } from 'react';
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 import { Brain, Send, Sparkles, AlertCircle, Zap } from 'lucide-react';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { SUGGESTED_TOPICS } from '../constants';
-
-const LOTTIE_LOADING_URL = 'https://lottie.host/4db68bbd-31f6-4cd8-84eb-189571e18dc2/H2YFpKmOEi.lottie';
 
 const AIAssistant: React.FC = () => {
   const [interest, setInterest] = useState('');
@@ -139,17 +136,11 @@ const AIAssistant: React.FC = () => {
         <p className="text-center text-gray-600 text-xs mb-8">Press Enter ↵ to search</p>
 
         {/* Lottie Loading Overlay */}
+        {/* Loading State */}
         {loading && (
           <div className="mb-8 flex flex-col items-center justify-center py-8">
-            <div className="w-48 h-48">
-              <DotLottieReact
-                src={LOTTIE_LOADING_URL}
-                loop
-                autoplay
-                style={{ width: '100%', height: '100%' }}
-              />
-            </div>
-            <p className="text-blue-400 font-semibold text-lg mt-2 animate-pulse">Generating project ideas...</p>
+            <div className="w-16 h-16 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin mb-4"></div>
+            <p className="text-blue-400 font-semibold text-lg animate-pulse">Generating project ideas...</p>
             <p className="text-gray-500 text-sm mt-1">Our AI is researching the best topics for you</p>
           </div>
         )}
